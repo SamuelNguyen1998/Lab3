@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Lab2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <div>
+                <span class="contact100-form-title">
+                    Dental Payment Form
+                </span>
+
+                <form class="contact100-form form--design">
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <h2>Tên khách hàng </h2>
+                        <input class="input100" type="text" name="name" placeholder="Vui lòng nhập họ tên ..."
+                            id="edtTen">
+                        <span class="focus-input100"></span>
+                    </div>
+                </form>
+
+                <h2>Vui lòng chọn dịch vụ:</h2>
+
+                <ul>
+                    <li class="type">
+                        <input type="radio" id="caoVoi">
+                        <label for="caoVoi">Cạo vôi</label>
+                        <div class="check"></div>
+                    </li>
+
+                    <li class="type">
+                        <input type="radio" id="tayTrang">
+                        <label for="tayTrang">Tẩy trắng</label>
+                        <div class="check"></div>
+                    </li>
+
+                    <li class="type">
+                        <input type="radio" id="chupHinhRang">
+                        <label for="chupHinhRang">Chụp hình răng</label>
+                        <div class="check"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="contact100-form">
+                <div class="wrap-input100 validate-input" data-validate="Name is required">
+                    <h2>Nhập vào số răng cần trám </h2>
+                    <input id="soRang" class="input100" type="number" name="name" max="34" min="1"
+                        placeholder="Số răng cần trám ...">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-contact100-form-btn ">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button type="button" class="contact100-form-btn" onclick="TinhTien()">
+                        TÍNH TIỀN
+                    </button>
+                </div>
+            </form>
+
+
+            <div id="divThanhTien" class="dongia">
+                <h2>Thành tiền:
+                    <span id="xuatTien" class="xuatTien"> 12345</span> vnd
+                </h2>
+            </div>
+            <!-- <input type="button" onclick="Luu()" name= id="">
+            <input type="button" onclick="Lay()" name="" id=""> -->
+            <!-- <div class="wrap-input100 validate-input dongia" id="divThanhTien" data-validate="Name is required">
+                <h2>Total </h2>
+                <span id="xuatTien" class="xuatTien"> 12345</span> vnd
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
