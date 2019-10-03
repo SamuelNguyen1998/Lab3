@@ -35,7 +35,7 @@ function TinhTien() {
 }
 
 function Luu() {
-    localStorage.setItem("ten", eFullname.value);1
+    localStorage.setItem("ten", eFullname.value);13
 }
 
 function Lay() {
